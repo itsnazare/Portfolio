@@ -1,0 +1,309 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.toggle-btn{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a2b69;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+    z-index: 1;
+}
+.logo{
+    text-decoration: none;
+    padding: 15px;
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.navbar-nav{
+    display: flex;
+}
+.nav-item{
+    list-style: none;
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.nav-link{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: white;
+    text-transform: uppercase;
+    border-radius: 15px;
+    font-size: 19px;
+}
+.nav-link:hover{
+    color: #0a2b69;
+    font-weight: bold;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+
+/* Home section style here */
+.home{
+    background-color: rgb(219, 213, 204);
+
+}
+.home .row{
+    display: flex;
+}
+.left-home{
+    width: 40%;
+    padding: 20px;
+}
+.left-home .title{
+    margin-top: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.left-home .title p span{
+    color: red;
+    font-size: 2.3rem;
+}
+.right-home{
+    width: 60%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+.right-home img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Project section style here */
+.heading{
+    text-align: center;
+    font-size: 3rem;
+    font-family: 'Baloo Thambi 2', cursive;
+    position: relative;
+}
+.heading::after{
+    content: '';
+    position: absolute;
+    background-color: #0a2b69;
+    width: 10%;
+    height: 5px;
+    left: 45%;
+    bottom: 0;
+    border-radius: 5px;
+}
+.project .row{
+    display: flex;
+    justify-content: space-between;
+}
+.project-left,
+.project-mid,
+.project-right{
+    width: 33.9%;
+    text-align: center;
+    padding: 20px 30px;
+}
+.card{
+    max-width: 100%;
+    height: 100%;
+    font-family: 'Baloo Thambi 2', cursive;
+    border-radius: 5px;
+}
+.card-body{
+    transition: 0.5s ease-in-out;
+}
+.project .card:hover .card-body{
+    box-shadow: 3px 2px 7px rgb(160, 160, 160);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.card-img img{
+    height: 200px;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: 0.5s ease-in-out;
+}
+.card-text{
+    margin-top: 20px;
+}
+.card-text p{
+    font-size: 18px;
+    padding: 10px;
+}
+
+/* About us style here */
+.about .row{
+    display: flex;
+}
+.about-left{
+    width: 50%;
+    padding: 20px;
+}
+.about-left img{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    box-shadow: 3px 2px 7px #a0a0a0;
+    cursor: pointer;
+}
+.about-right{
+    width: 50%;
+}
+.about-discription{
+    font-size: 1.5rem;
+    padding: 30px;
+    margin-top: 50px;
+}
+.btn-sec{
+    text-align: center;
+    margin-top: 80px;
+}
+.btn{
+    background-color: #0a2b69;
+    padding: 2px 20px;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid #0a2b69;
+    font-family: 'Baloo Thambi 2', cursive;
+    font-size: 2rem;
+}
+.btn:hover{
+    color: #0a2b69;
+    background-color: #fff;
+    transition: 0.3s ease-in-out;
+}
+/* Skill section start here */
+.skill .row{
+    display: flex;
+}
+.skill-left,
+.skill-right{
+    width: 50%;
+    border: 1px solid red;
+    padding: 20px 50px;
+}
+.skill-item{
+    list-style: none;
+    padding: 20px 10px;
+}
+
+/* Friend section style here */
+.friend .row{
+    display: flex;
+}
+.friend-left,
+.friend-right{
+    width: 50%;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.icon{
+    height: 100%;
+    width: 100%;
+}
+.icon a{
+    text-decoration: none;
+    color: inherit;
+}
+.icon img{
+    height: 80px;
+    padding: 20px;
+}
+
+/* contact section style here */
+.contact .row{
+    display: flex;
+}
+.contact-left,
+.contact-right{
+    width: 50%;
+}
+.contact-left img{
+    width: 100%;
+    height: 100%;
+}
+.contact-right .form-div{
+    padding: 50px 30px 0 50px;
+    overflow: hidden;
+}
+.contact-right form{
+    margin-left: 30px;
+}
+.contact-right form label{
+    font-size: 2rem;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+.contact-right form input,
+.contact-right form textarea{
+    width: 400px;
+    position: relative;
+    height: 40px;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 1px solid #a39e9e;
+    padding: 20px 0;
+    font-family: 'Baloo Thambi 2', cursive;
+    outline: none;
+    overflow: hidden;
+    font-size: 1rem;
+}
+/* Footer section style here */
+.footer{
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 10px;
+    box-shadow: 3px 0px 4px 3px #a39e9e;
+}
+.footer p{
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Baloo Thambi 2', cursive;
+}
+
+
+
+/* Utility design */
+.uni-pad{
+    padding: 0 7%;
+}
+#dark{
+    position: fixed;
+    bottom: 5%;
+    left: 3%;
+    cursor: pointer;
+    background-color: #0a2b69;
+    color: white;
+    border-radius: 50%;
+    padding: 10px;
+}
+.dark-mode{
+    background-color: #000;
+    color: white;
+}
+/* span .underline{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--red);
+    height: 4px;
+    width: 20%;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    -webkit-transform: translate(100%, -200%);
+    transform: translate(100%, -200%);
+} */
+
